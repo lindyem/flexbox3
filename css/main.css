@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: black;
   height: 100%;
   width: 100%;
 }
@@ -105,15 +105,17 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
     display:flex;
+    flex-flow: row warp;
    justify-content: space-between;
   font-weight: 700;
+ 
 
 }
 
@@ -124,13 +126,18 @@ body {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
+  background-color:black;
   width: 30%;
-  height: 300px;
+  height: auto;
+  border:
 }
 
-
+.wrapper span {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.3em;
+  }
+  
 
 
 /* ==========================================================================
@@ -249,6 +256,15 @@ body {
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+    @media all and (min-width: 1200px) {
+        .div-1, .div-2, .div-3 {
+          flex-basis: 30%;
+        }
+    
+        .div-1, .div-2 {
+          border-right: 1px solid white;
+          padding-right: 30px;
+        }
 
     /*
      * Don't show links that are fragment identifiers,
