@@ -100,8 +100,24 @@ html {
   background-color: black;
   height: 100%;
   width: 100%;
+  font-size: 12px;
+  font-family: ;
 }
-
+header{
+    color:white;
+}
+h1{
+    margin-left: 20%;
+    font-size: 4em;
+}
+.hello{
+    font-size: 2em;
+    padding-bottom: 20px;
+    margin-bottom:20px;
+}
+.hello span{
+    font-weight: 700;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
@@ -130,7 +146,7 @@ body {
   background-color:black;
   width: 30%;
   height: auto;
-  border:
+  font-size: 2em;
 }
 
 .wrapper span {
@@ -138,7 +154,16 @@ body {
     font-size: 1.3em;
   }
   
+  .footer{
+      dispaly: flex;
+      margin-top: 20px;
 
+  }
+  .socialmedia{
+      display:flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+  }
 
 /* ==========================================================================
    Helper classes
